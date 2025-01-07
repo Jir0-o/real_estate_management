@@ -44,64 +44,49 @@
                 </li>
                 <!-- Layouts -->
                 <li class="menu-header small text-uppercase">
-                    <span class="menu-header-text">Manage Task Section</span>
+                    <span class="menu-header-text">Property Section</span>
                 </li>
-                @can('View Assign Task')
                 <li class="menu-item">
                     <a href="javascript:void(0);" class="menu-link menu-toggle">
                         <i class="menu-icon tf-icons bx bx-task"></i>
-                        <div data-i18n="Layouts">Manage Task Details</div>
+                        <div data-i18n="Layouts">Property Details</div>
                     </a>
-                    @endcan
                     <ul class="menu-sub">
-                        @can('View manage work plan')
                         <li class="menu-item">
-                            <a href="{{ route('manage_work.index') }}" class="menu-link">
-                                <div data-i18n="Without menu">Manage Work Plan</div>
+                            <a href="{{route('property.index')}}" class="menu-link">
+                                <div data-i18n="Without menu">Property List</div>
                             </a>
                         </li>
-                        @endcan
-                        @can('View Assign Task')
                         <li class="menu-item">
-                            <a href="{{ route('asign_tasks.index') }}" class="menu-link">
-                                <div data-i18n="Without menu">Assign Task</div>
+                            <a href="{{route('type.index')}}" class="menu-link">
+                                <div data-i18n="Without menu">Home Type</div>
                             </a>
                         </li>
-                        @endcan
-                        @can('View Project Details')
                         <li class="menu-item">
-                            <a href="{{route('project_title.index')}}" class="menu-link">
+                            <a href="#" class="menu-link">
                                 <div data-i18n="Container">Project Details</div>
                             </a>
                         </li>
-                        @endcan
                     </ul>
                 </li>
-                @can('View Task & Plan Details')
                 <li class="menu-item">
                     <a href="javascript:void(0);" class="menu-link menu-toggle">
                         <i class="menu-icon tf-icons bx bx-calendar-check"></i>
                         <div data-i18n="Layouts">Task & Plan Manage</div>
                     </a>
                     <ul class="menu-sub">
-                        @can('View Work Plan')
                         <li class="menu-item">
-                            <a href="{{ route('work_plan.index') }}" class="menu-link">
+                            <a href="#" class="menu-link">
                                 <div data-i18n="Without navbar">Work Plan</div>
                             </a>
                         </li>
-                        @endcan
-                        @can('View Task Details')
                         <li class="menu-item">
-                            <a href="{{ route('tasks.index') }}" class="menu-link">
+                            <a href="#" class="menu-link">
                                 <div data-i18n="Without navbar">Task Details</div>
                             </a>
                         </li>
-                        @endcan
                     </ul>
                 </li>
-                @endcan
-                @can('View Login Details Tab')
                 <li class="menu-header small text-uppercase">
                     <span class="menu-header-text">Login Details Section</span>
                 </li>
@@ -110,18 +95,14 @@
                         <i class="menu-icon tf-icons bx bx-user-check"></i>
                         <div data-i18n="Layouts">Login Details</div>
                     </a>
-                    @can('View User login Details')
                     <ul class="menu-sub">
                         <li class="menu-item">
-                            <a href="{{ route('login_details.index') }}" class="menu-link">
+                            <a href="#" class="menu-link">
                                 <div data-i18n="Without menu">User Login Details</div>
                             </a>
                         </li>
-                        @endcan
                     </ul>
                 </li>
-                @endcan
-                @if(auth()->user()->can('View Other Tabs') || auth()->user()->can('View Application'))
                 <li class="menu-header small text-uppercase">
                     <span class="menu-header-text">Report & Other Section</span>
                 </li>
@@ -131,48 +112,36 @@
                         <div data-i18n="Layouts">Other Tabs</div>
                     </a>
                     <ul class="menu-sub">
-                        @can('View Notice Board')
                         <li class="menu-item">
-                            <a href="{{ route('notice.index') }}" class="menu-link">
+                            <a href="#" class="menu-link">
                                 <div data-i18n="Without menu">Notice Board</div>
                             </a>
                         </li>
-                        @endcan
-                        @can('View Application')
                         <li class="menu-item">
-                            <a href="{{ route('application.index') }}" class="menu-link">
+                            <a href="#" class="menu-link">
                                 <div data-i18n="Without navbar">Application</div>
                             </a>
                         </li>
-                        @endcan
                     </ul>
                 </li>
-                @endcan
-                @if(auth()->user()->can('View Report') || auth()->user()->can('View Login Report'))
                 <li class="menu-item">
                     <a href="javascript:void(0);" class="menu-link menu-toggle">
                         <i class="menu-icon tf-icons bx bx-bar-chart"></i>
                         <div data-i18n="Layouts">Report Section</div>
                     </a>
                     <ul class="menu-sub">
-                        @can('View Report')
                         <li class="menu-item">
-                            <a href="{{route('report.index')}}" class="menu-link">
+                            <a href="#" class="menu-link">
                                 <div data-i18n="Container">View Report</div>
                             </a>
                         </li>
-                        @endcan
-                        @can('View Login Report')
                         <li class="menu-item">
-                            <a href="{{ route('loginReport.view') }}" class="menu-link">
+                            <a href="#" class="menu-link">
                                 <div data-i18n="Without navbar">Login Report</div>
                             </a>
                         </li>
-                        @endcan
                     </ul>
                 </li>
-                @endcan
-                @can('View Role Permission Menu')
                 <li class="menu-header small text-uppercase">
                     <span class="menu-header-text"> Role and Permission</span>
                 </li>
@@ -184,7 +153,6 @@
                         <div data-i18n="Settings">Role Permission & User</div>
                     </a>
                 </li>
-                @endcan
             </ul>
         </aside>
         <!-- / Menu -->

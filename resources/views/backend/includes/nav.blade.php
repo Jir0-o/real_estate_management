@@ -36,337 +36,12 @@
     .notifications-read {
     opacity: 0.6; 
     }
-
-    body.dark-mode {
-        background-color: #121212;
-        color: #ffffff;
-    }
-
-    /* Navbar in Dark Mode */
-    body.dark-mode .navbar,
-    body.dark-mode {
-        background-color: #333333;
-        color: #ffffff;
-    }
-
-    body.dark-mode .navbar input,
-    body.dark-mode .navbar a {
-        color: #ffffff;
-    }
-
-    /* Sidebar in Dark Mode */
-    body.dark-mode .layout-menu {
-        background-color: #222222;
-        color: #ffffff;
-    }
-
-    body.dark-mode .layout-menu a {
-        color: #ffffff;
-    }
-
-    body.dark-mode .menu-inner {
-        background-color: #222222;
-        color: #ffffff;
-    }
-
-    /* Cards in Dark Mode */
-    body.dark-mode .card {
-        background-color: #444444;
-        color: #ffffff;
-        border: none;
-    }
-
-    /* Tables in Dark Mode */
-    body.dark-mode .table {
-        background-color: #333333;
-        color: #ffffff;
-    }
-
-    body.dark-mode .table th,
-    body.dark-mode .table td {
-        border-color: #555555;
-        color: #ffffff;
-    }
-
-    /* Additional Elements */
-    body.dark-mode a {
-        color: #00bcd4; /* Adjust color for links */
-    }
-
-    body.dark-mode .tab-content {
-        background-color: #333333;
-        color: #ffffff;
-    }
-
-    /* Dark mode for the top navbar */
-    body.dark-mode .layout-navbar {
-        background-color: #333333; /* Dark background */
-        color: #181616; /* Light text color */
-        border-bottom: 1px solid #444444; /* Optional: subtle border for separation */
-    }
-
-    /* Dark mode for the navbar links and icons */
-    body.dark-mode .layout-navbar a,
-    body.dark-mode .layout-navbar .nav-item i,
-    body.dark-mode .layout-navbar .form-control {
-        color: #1d1b1b; /* Adjust text color for better visibility */
-    }
-
-    /* Dark mode for the notification dropdown */
-    body.dark-mode .notification-dropdown {
-        background-color: #444444;
-        color: #ffffff;
-        border: none;
-    }
-
-    /* Dark mode for the notification badge */
-    body.dark-mode #notification-count {
-        background-color: #ff4444; /* Red for better visibility */
-        color: #ffffff;
-    }
-
-    /* Dark mode for the search input */
-    body.dark-mode .layout-navbar .form-control {
-        background-color: #555555; /* Darker background for inputs */
-        color: #ffffff;
-        border: 1px solid #666666; /* Optional border */
-    }
-
-    /* Dark mode for dropdown menus */
-    body.dark-mode .dropdown-menu {
-        background-color: #444444;
-        color: #ffffff;
-        border: none;
-    }
-
-    /* Dark mode for user profile dropdown */
-    body.dark-mode .dropdown-menu .dropdown-item {
-        color: #ffffff;
-    }
-
-    body.dark-mode .dropdown-menu .dropdown-item:hover {
-        background-color: #555555; /* Highlight on hover */
-    }
-
-    body.dark-mode .text-500 {
-    color: #ffffff !important; /* Forces white text */
-    }
-
-    /* Make all h5 tags white */
-    body.dark-mode .h5 {
-        color: #ffffff !important;
-    }
-
-    /* For Dark Mode */
-    body.dark-mode h5 {
-        color: #ffffff !important; /* Ensures white text in dark mode */
-    }
-
-    /* Dark mode styles for the notice board */
-    body.dark-mode .notice-board {
-        background-color: #444444; /* Dark background for notice board */
-        color: #ffffff; /* White text for visibility */
-        border: 1px solid #555555; /* Softer border for dark mode */
-    }
-
-    /* Dark mode styles for notice card */
-    body.dark-mode .notice-card {
-        background-color: #555555; /* Darker background for each notice card */
-        color: #ffffff; /* Ensure text is visible */
-        border: 1px solid #666666; /* Slight border for card separation */
-        border-radius: 8px;
-        padding: 10px;
-    }
-
-    /* Dark mode for header text */
-    body.dark-mode .notice-header h4 {
-        color: #ffffff;
-    }
-    body.dark-mode h3 {
-        color: #ffffff;
-    }
-
-    /* Dark mode for notice details and message */
-    body.dark-mode .notice-details,
-    body.dark-mode .notice-message {
-        color: #dddddd; /* Slightly lighter text for better readability */
-    }
-
-    /* Dark mode for author and date */
-    body.dark-mode .notice-author,
-    body.dark-mode .notice-date {
-        color: #bbbbbb; /* Subtle color for secondary info */
-    }
-
-    /* Ensure list points are also visible */
-    body.dark-mode .notice-points li {
-        color: #dddddd;
-    }
-
-    /* Ensure no padding or margin at the top of the parent container */
-    body.dark-mode .app-brand {
-        background-color: #222222; /* Match the dark mode background */
-        color: #ffffff; /* Ensure text is visible */
-        border: none; /* Remove any border causing white space */
-    }
-
-    /* Default image styling */
-    .side-nav-logo {
-        height: 40px;
-        background-color: transparent;
-        display: block;
-        margin: auto; 
-    }
-
-    /* Dark mode adjustments for the image container */
-    body.dark-mode .app-brand-logo .side-nav-logo {
-        filter: brightness(0.8);
-        background-color: #222222;
-    }
-
-    /* Modal Background and Content */
-    body.dark-mode .modal-content {
-        background-color: #333; /* Dark background for modal content */
-        color: #ffffff; /* White text for better visibility */
-    }
-
-    /* Modal Header */
-    body.dark-mode .modal-header {
-        background-color: #444; /* Slightly darker background for header */
-        color: #ffffff; /* Ensure the text in the header is white */
-    }
-
-    body.dark-mode .modal-header .btn-close {
-        filter: invert(1); /* Inverts the close button icon for dark mode */
-    }
-
-    /* Modal Body */
-    body.dark-mode .modal-body {
-        background-color: #444; /* Dark background for body */
-    }
-
-    /* Form Inputs, Selects, and Textareas */
-    body.dark-mode .form-control {
-        background-color: #555; /* Dark background for inputs */
-        color: #ffffff; /* White text inside inputs */
-        border: 1px solid #888; /* Lighter border for inputs */
-    }
-
-    /* Input and Select Focus State */
-    body.dark-mode .form-control:focus {
-        border-color: #007bff; /* Highlight border color on focus */
-        background-color: #444; /* Maintain the dark background on focus */
-    }
-
-    /* Modal Footer */
-    body.dark-mode .modal-footer {
-        background-color: #444; /* Dark background for footer */
-    }
-
-    /* Button Styling */
-    body.dark-mode .btn-primary {
-        background-color: #007bff; /* Primary button color */
-        border-color: #007bff;
-    }
-
-    body.dark-mode .btn-secondary {
-        background-color: #555; /* Secondary button in dark mode */
-        border-color: #555;
-    }
-
-    /* Error Messages */
-    body.dark-mode .text-danger {
-        color: #ff6b6b; /* Red color for error text */
-    }
-
-    /* Dark Mode Styles for Profile */
-    .dark-mode #profile-container {
-        background-color: #121212;
-        color: #ffffff;
-    }
-
-    .dark-mode #profile-container .card,
-    .dark-mode #profile-container .form-section,
-    .dark-mode #profile-container .table {
-        background-color: #222222;
-        color: #ffffff;
-        border: 1px solid #444444;
-    }
-
-    /* Form Labels, Inputs, Buttons */
-    .dark-mode #profile-container label {
-        color: #cccccc;
-    }
-
-    .dark-mode #profile-container input,
-    .dark-mode #profile-container textarea,
-    .dark-mode #profile-container select {
-        background-color: #333333;
-        color: #ffffff;
-        border: 1px solid #555555;
-    }
-
-    .dark-mode #profile-container button {
-        background-color: #444444;
-        color: #1a1717;
-        border: 1px solid #666666;
-    }
-
-    .dark-mode #profile-container button:hover {
-        background-color: #555555;
-    }
-
-    .dark-mode #profile-container .underline {
-        color: #bbbbbb;
-    }
-
-    .dark-mode #profile-container .underline:hover {
-        color: #ffffff;
-    }
-
-    /* Header in Dark Mode */
-    .dark-mode header, 
-    .dark-mode header h2 {
-        background-color: #121212; /* Match dark mode background */
-        color: #ffffff; /* Match dark mode text */
-    }
-
-    /* General Container in Dark Mode */
-    .dark-mode .max-w-7xl {
-        background-color: #121212; /* Match dark mode background */
-        color: #ffffff; /* Match dark mode text */
-        border: 1px solid #444444; /* Optional border for distinction */
-    }
-
-    /* Section Borders in Dark Mode */
-    .dark-mode .section-border {
-        border-top: 1px solid #444444;
-    }
-
-    /* Additional Livewire Forms in Dark Mode */
-    .dark-mode .form-section,
-    .dark-mode .livewire-component {
-        background-color: #222222;
-        color: #ffffff;
-        border: 1px solid #444444;
-    }
-
-    /* Buttons in Dark Mode */
-    .dark-mode button {
-        background-color: #444444;
-        color: #ffffff;
-        border: 1px solid #666666;
-    }
-
-    .dark-mode button:hover {
-        background-color: #555555;
-    }
     
     .layout-navbar a {
         text-decoration: none !important;
     }
 
-    </style>
+</style>
 
 <div class="modal fade" id="logoutReasonModal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
@@ -482,19 +157,20 @@
                             <span class="align-middle">My Profile</span>
                         </a>
                     </li>
-                    @can('View Role Permission Menu')
                     <li>
                         <a class="dropdown-item" href="{{ route('settings') }}">
                             <i class="bx bx-cog me-2"></i>
                             <span class="align-middle">Role & Permission</span>
                         </a>
                     </li>
-                    @endcan
                     <li>
                         <div class="dropdown-divider"></div>
                     </li>
                     <li>
-                        <a id="logout-button" class="dropdown-item" href="javascript:void(0);">
+                        <form id="logout-form" method="POST" action="{{ route('logout') }}" style="display: none;">
+                            @csrf
+                        </form>
+                        <a id="logout-button" class="dropdown-item" href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                             <i class="bx bx-power-off me-2"></i>
                             <span class="align-middle">Log Out</span>
                         </a>
@@ -504,86 +180,13 @@
             <!--/ User Dropdown -->
         </ul>
     </div>
-    {{-- <div id="nev_user_activity" class="d-none">
-        @foreach ($activeUsers as $users)
-            <div>
-                <strong>{{ $users->name }}:</strong> 
-                Logged in at {{ \Carbon\Carbon::parse($users->login_time)->format('d F Y, h:i A') }}
-                <span id="nev-duration-{{ $users->id }}" class="text-muted">
-                    (Active: <span class="active-nev-time" data-nev_id="{{ $users->id }}" data-nev_start="{{ \Carbon\Carbon::parse($users->login_time)->timestamp }}">00:00:00</span>)
-                </span>
-            </div>
-        @endforeach
-    </div> --}}
 </nav>
 
-<script>
-function submitLogout() {
-    const reason = $('#logout-reason').val();
-
-    $.ajax({
-        url: "{{ route('updateLogoutTime') }}",
-        type: "POST",
-        data: {
-            _token: "{{ csrf_token() }}",
-            logout_reason: reason
-        },
-        success: function() {
-            $.ajax({
-                url: "{{ route('logout') }}", 
-                type: "POST",
-                data: {
-                    _token: "{{ csrf_token() }}" 
-                },
-                success: function() {
-                    window.location.href = "{{ route('login') }}";
-                },
-                error: function() {
-                    alert("Error logging out. Please try again.");
-                }
-            });
-        },
-        error: function() {
-            alert("Error updating logout reason. Please try again.");
-        }
-    });
-}
-
-</script>
 
 <script>
-$(document).ready(function () {
-
-
-const markAsReadUrlTemplate = "{{ route('notifications.markAsRead', ':id') }}";
-
 // Ensure markAsRead is available globally
 $(document).ready(function() {
-
-    const $toggleIcon = $('#dark-mode-toggle');
-    const darkModeClass = 'dark-mode';
-    
-    // Apply dark mode if user has previously enabled it
-    if (localStorage.getItem('theme') === darkModeClass) {
-        $('body').addClass(darkModeClass);
-        $toggleIcon.html('<i class="fas fa-sun"></i>');
-    } else {
-        $toggleIcon.html('<i class="fas fa-moon"></i>');
-    }
-    
-    // Toggle dark mode on icon click
-    $toggleIcon.on('click', function () {
-        $('body').toggleClass(darkModeClass);
-        
-        // Update the icon based on the current mode
-        if ($('body').hasClass(darkModeClass)) {
-            $toggleIcon.html('<i class="fas fa-sun"></i>');
-            localStorage.setItem('theme', darkModeClass);
-        } else {
-            $toggleIcon.html('<i class="fas fa-moon"></i>');
-            localStorage.removeItem('theme');
-        }
-    });
+    const markAsReadUrlTemplate = "{{ route('notifications.markAsRead', ':id') }}";
 
     // Stop the notification dropdown from closing when clicking inside it
     $('.notification-dropdown').on('click', function (e) {
@@ -609,7 +212,6 @@ $(document).ready(function() {
             }
         });
     };
-});
     // Fetch notifications when the dropdown is clicked
     $('#notification-icon').on('click', function () {
         fetchNotifications();
@@ -764,107 +366,6 @@ $('#clear-notifications').on('click', function() {
     });
 });
 
-$('#logout-button').on('click', function (e) {
-    e.preventDefault();
-    
-    const currentTime = new Date().toLocaleString("en-US", { timeZone: "Asia/Dhaka" });
-    const hours = new Date(currentTime).getHours();
-
-    if (hours < 18) {  
-        $('#logoutReasonModal').modal('show'); 
-    } else {
-        
-        $('#logout-button').text('Logging Out...'); 
-        
-        $.post("{{ route('logout') }}", { _token: "{{ csrf_token() }}" }, function() {
-            window.location.href = "{{ route('login') }}";
-        });
-    }
-});
 });
 
 </script>
-
-{{-- <script>
-    $(document).ready(function() {
-    // Function to format seconds into HH:MM:SS
-    function formatTime(seconds) {
-        let hrs = Math.floor(seconds / 3600);
-        let mins = Math.floor((seconds % 3600) / 60);
-        let secs = seconds % 60;
-        return `${hrs.toString().padStart(2, '0')}:${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
-    }
-
-    // Counter to track intervals
-    let ajaxCounter = 0;
-
-    // Update each user's active time every second
-    setInterval(function () {
-        $('.active-nev-time').each(function () {
-            const userId = $(this).data('nev-id');
-            const startTime = $(this).data('nev-start');
-            const currentTime = Math.floor(Date.now() / 1000);
-            const activeDuration = currentTime - startTime;
-
-            // Update the displayed active time
-            $(this).text(formatTime(activeDuration));
-
-            // Increment the counter
-            ajaxCounter++;
-
-            // Send an Ajax request every 10 seconds
-            if (ajaxCounter % 10 === 0) {
-                $.ajax({
-                    url: "{{ route('updateLoginTime') }}",
-                    type: 'POST',
-                    data: {
-                        login_id: userId,
-                        active_seconds: activeDuration,
-                        _token: '{{ csrf_token() }}'
-                    },
-                    success: function (response) {
-                        // Optionally, handle success feedback
-                    },
-                    error: function () {
-                    }
-                });
-            }
-        });
-    }, 1000); // Update every second
-    });
-</script> --}}
-<script>
-    $(document).ready(function () {
-        let activeSeconds = 0; // Initialize active seconds
-
-        function updateLoginTime() {
-            activeSeconds += 10; // Increment by 10 seconds
-
-            $.ajax({
-                url: "{{ route('updateNevLoginTime') }}", // Named route
-                type: "POST",
-                data: {
-                    active_seconds: activeSeconds, // Send current active seconds
-                    _token: "{{ csrf_token() }}" // CSRF token for security
-                },
-                success: function (response) {
-                    if (response.login_hour) {
-
-                    } else {
-                        console.error(response.error || 'Failed to update login time');
-                    }
-                },
-                error: function (xhr, status, error) {
-                    console.error('Error:', error);
-                }
-            });
-        }
-
-        // Call the function every 10 seconds
-        setInterval(updateLoginTime, 10000);
-    });
-</script>
-
-
-
-

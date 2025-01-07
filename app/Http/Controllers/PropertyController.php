@@ -2,30 +2,41 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\DetailLogin;
-use App\Models\LoginInfo;
-use App\Models\Notice;
-use App\Models\Notification;
-use App\Models\Task;
-use App\Models\TitleName;
-use App\Models\User;
-use App\Models\WorkPlan;
-use Carbon\Carbon;
+use App\Models\Property;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\DB;
-use Spatie\Permission\Models\Role;
+use Illuminate\Support\Facades\Log;
 
-class DashboardController extends Controller
+class PropertyController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $user = Auth::user();
+        return view('backend.property.property_view');
+    }
+    public function getProperty()
+    {        
+        try {
+            $property = Property::all();
 
-        return view('dashboard',compact('user'));
+            return response()->json([
+                'status' => true,
+                'message' => 'Property data retrieved successfully',
+                'data' => [
+                    'property'=> $property
+                ],
+            ], 201); 
+
+        } catch (\Exception $e) {
+            Log::error('Error retrieving property data: ' . $e->getMessage());
+
+            return response()->json([
+                'status' => false,
+                'message' => 'Failed to retrieve property data',
+                'error' => $e->getMessage()
+            ], 500); 
+        }
     }
 
     /**

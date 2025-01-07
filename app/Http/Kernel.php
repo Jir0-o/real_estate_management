@@ -37,9 +37,6 @@ class Kernel extends HttpKernel
             \App\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
             \RealRashid\SweetAlert\ToSweetAlert::class,
-            \App\Http\Middleware\CheckMidnightLogout::class,
-            \App\Http\Middleware\SingleSessionCheck::class,
-
         ],
 
         'api' => [

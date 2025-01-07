@@ -5,7 +5,7 @@
     <div class="site-section site-section-sm bg-light">
       <div class="container">
       
-        <div class="row mb-5">
+        <div class="row mb-5"> 
           <div class="col-md-6 col-lg-4 mb-4">
             <div class="property-entry h-100">
               <a href="property-details.html" class="property-thumbnail">

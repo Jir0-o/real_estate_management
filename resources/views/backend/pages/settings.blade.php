@@ -270,7 +270,6 @@
                         <div class="col-12 col-md-6">
                             <h5>Users</h5>
                         </div>
-                        @can('Create User')
                         <div class="col-12 col-md-6">
                             <div class="float-end">
                                 <!-- Button trigger modal -->
@@ -280,7 +279,6 @@
                                 <!-- Modal -->
                             </div>
                         </div>
-                        @endcan
                     </div>
                 </div>
                 <div class="table-responsive text-nowrap p-3">
@@ -325,24 +323,20 @@
                                                 <i class="bx bx-dots-vertical-rounded"></i>
                                             </button>
                                             <div class="dropdown-menu">
-                                                @can('edit User')
                                                 <a class="dropdown-item" 
                                                    href="#" 
                                                    data-bs-toggle="modal" 
                                                    data-bs-target="#editUserModal" 
                                                    data-id="{{ $user->id }}">
                                                     <i class="bx bx-edit-alt me-1"></i> Edit
-                                                </a>
-                                                @endcan                               
-                                                        @can('delete User')
-                                                        <form id="delete-{{ $user->id }}" action="{{ route('user.destroy', $user->id) }}" method="POST">
-                                                            @csrf
-                                                            @method('DELETE')
-                                                            <button type="button" class="dropdown-item" onclick="confirmDelete({{ $user->id}})">
-                                                                <i class="bx bx-trash me-1"></i> Delete
-                                                            </button>
-                                                        </form>
-                                                        @endcan
+                                                </a>              
+                                                <form id="delete-{{ $user->id }}" action="{{ route('user.destroy', $user->id) }}" method="POST">
+                                                    @csrf
+                                                    @method('DELETE')
+                                                    <button type="button" class="dropdown-item" onclick="confirmDelete({{ $user->id}})">
+                                                        <i class="bx bx-trash me-1"></i> Delete
+                                                    </button>
+                                                </form>
                                             </div>
                                         </div>
                                     </td>
